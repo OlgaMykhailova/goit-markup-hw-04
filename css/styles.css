@@ -136,10 +136,20 @@ img {
  .envelope-icon {
       width: 16px; 
       height: 12px; 
+      fill: var(--primary-text-color);
  }
 
  .link:hover .envelope-icon,
  .link:focus .envelope-icon {
+   fill: var(--accent-color)
+ }
+ .smartphone-icon {
+   width: 10px;
+   height: 16px;
+   fill: var(--primary-text-color);
+ }
+ .link:hover .smartphone-icon,
+ .link:focus .smartphone-icon {
    fill: var(--accent-color)
  }
 
@@ -333,10 +343,13 @@ img {
   height: 20px;
   fill: var(--icon-color);
 }
-.command-link:hover {
+.command-link:hover,
+.command-link:focus {
   background-color: var(--accent-color);
 }
-.command-link:hover .command-icon {
+.command-link:hover .command-icon,
+.command-link:focus .command-icon
+ {
   fill:var(--primary-bg-color)
 }
 /* Секция Постоянные клиенты */
@@ -465,6 +478,9 @@ img {
 .footer-contacts {
   color: var(--footer-text-color);
 }
+.footer-list {
+  width: 231px;
+}
 .footer-list:not(:last-child) {
    margin-bottom: 9px;
 }
@@ -479,3 +495,46 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.join-us {
+  color: var(--third-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.footer-flex {
+  display: flex;
+}
+.footer-flex-item:not(:last-child) {
+  margin-right: 70px;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px; 
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-bg-color);
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+/* .footer-flex-item.social {
+  padding: 72px 0 100px;
+} */
