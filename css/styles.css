@@ -134,19 +134,20 @@ img {
   padding-bottom: 32px;
  }
  .envelope-icon {
-      width: 16px; 
-      height: 12px; 
-      fill: var(--primary-text-color);
+    fill: var(--primary-text-color);
+    margin-right: 10px;
  }
-
  .link:hover .envelope-icon,
  .link:focus .envelope-icon {
    fill: var(--accent-color)
  }
+ .header-contacts-item .link {
+   display: flex;
+   align-items: center;
+    }
  .smartphone-icon {
-   width: 10px;
-   height: 16px;
    fill: var(--primary-text-color);
+   margin-right: 10px;
  }
  .link:hover .smartphone-icon,
  .link:focus .smartphone-icon {
@@ -270,12 +271,7 @@ img {
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
 }
-.icon-features {
-  display: block;
-  width: 70px;
-  height: 70px;
-  vertical-align: center;
-  }
+
 /* Секция Чем мы занимаемся */
 
 .we-doing {
@@ -339,9 +335,7 @@ img {
   height: 44px;
 }
 .command-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--icon-color);
+    fill: var(--icon-color);
 }
 .command-link:hover,
 .command-link:focus {
@@ -507,6 +501,7 @@ img {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-flex-item:not(:last-child) {
   margin-right: 70px;
@@ -528,13 +523,8 @@ img {
   background-color: var(--accent-color);
 }
 .footer-social-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--primary-bg-color);
 }
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
-/* .footer-flex-item.social {
-  padding: 72px 0 100px;
-} */
